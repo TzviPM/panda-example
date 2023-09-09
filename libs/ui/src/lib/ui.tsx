@@ -1,11 +1,15 @@
-import styles from './ui.module.css';
+import { css } from '../../styled-system/css';
 
 /* eslint-disable-next-line */
 export interface UiProps {}
 
 export function Ui(props: UiProps) {
   return (
-    <div className={styles['container']}>
+    <div
+      className={css({
+        color: 'red.600',
+      })}
+    >
       <h1>Welcome to Ui!</h1>
     </div>
   );
